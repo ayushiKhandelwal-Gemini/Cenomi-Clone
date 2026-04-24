@@ -1,5 +1,5 @@
-// import Navbar from "@/components/Navbar";
-// import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 import SearchBar from "@/components/Searchbar";
 import Vision from "@/components/Vision";
 import Portfolio from "@/components/Portfolio";
@@ -11,8 +11,8 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
+      <Navbar />
+      <Hero />
       <SearchBar />
       <Vision />
       <Portfolio />
