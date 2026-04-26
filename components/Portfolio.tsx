@@ -21,6 +21,11 @@ const malls = [
     city: "Dhahran",
     image: "/mall4.png",
   },
+  // {
+  //   name: "Dubai Mall",
+  //   city: "Dubai",
+  //   image: "/mall5.jpg",
+  // },
 ];
 
 const Portfolio = () => {

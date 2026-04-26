@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
-body {
+html,body {
   margin: 0 ;
   font-family: Inter, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -20,7 +21,7 @@ body {
 /* Container */
 .navbar-container {
   max-width: 1500px;
-  padding: 22px 48px;
+  padding: 22px 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -116,7 +117,7 @@ body {
 /* hero */
 .hero {
   position: relative;
-  height: 650px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -197,8 +198,10 @@ body {
 /* Container */
 .search-container {
   max-width: 1200px;
-  margin-left: 70px;
-  margin-right: 70px;
+  /* margin-left: 70px;
+  margin-right: 70px; */
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   gap: 12px;
   align-items: flex-start;
@@ -608,16 +611,19 @@ body {
   width: 100px;
   margin-bottom: 15px;
 }
+.store-btns{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .store-btns img {
   width: 120px;
-  margin: 10px 5px;
 }
 
 /* RIGHT SIDE */
 .app-right {
   width: 50%;
-  padding: 60px;
+  padding: 90px;
   background: #f5f5f5;
 }
 
@@ -629,6 +635,7 @@ body {
 
 .app-right p {
   color: #444;
+  font-size: larger;
   margin-bottom: 15px;
   line-height: 1.6;
 }

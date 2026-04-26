@@ -4,28 +4,30 @@ const AppSection = () => {
   return (
     <section className="app-wrapper">
 
-      {/* Top Section */}
       <div className="app-top">
 
-        {/* LEFT SIDE (Purple) */}
         <div className="app-left">
           <img src="/app.png" alt="app" className="phone-img" />
-
-          <div className="qr-box">
-            <img src="/qr.png" alt="qr" />
-            <p>
-              Download the Cenomi Plus App Available on <br />
-              Google Play & App Store.
-            </p>
-
-            <div className="store-btns">
-              <img src="/google-play.png" alt="playstore" />
-              <img src="/app-store.png" alt="appstore" />
+          <div style={{display:"flex",  alignItems: "center",gap:"15px"}}>
+            <div className="qr-box">
+              <div><img src="/qr.png" alt="qr" /></div>
             </div>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" ,flexWrap:"wrap"}}>
+                <div>
+                <p style={{fontSize:"30px"}}>
+                  Download the Cenomi Plus App Available on <br />
+                  Google Play & App Store.
+                </p>
+                </div>
+
+                <div className="store-btns">
+                  <img src="/playstore.png" alt="playstore" />
+                  <img src="/appstore.png" alt="appstore" />
+                </div>
+              </div>
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="app-right">
           <h4>Cenomi Plus App</h4>
 
