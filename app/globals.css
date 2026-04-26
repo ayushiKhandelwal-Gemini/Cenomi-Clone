@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 ;
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -121,15 +121,21 @@ body {
 }
 
 .hero-track {
-  display: flex;
   height: 100%;
-  transition: transform 1s ease;
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100%;
 }
 
 .hero-slide {
-  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-card {
@@ -142,12 +148,10 @@ body {
   color: white;
   z-index: 2;
 }
+
 .hero-card div {
   margin: 10px;
 }
-
-
-
 
 .hero-card h1 {
   margin: 0;
