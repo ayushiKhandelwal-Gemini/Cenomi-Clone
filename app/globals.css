@@ -726,3 +726,162 @@ html,body {
   justify-content: space-between;
   font-size: 14px;
 }
+
+/*  MOBILE (<= 768px) */
+@media (max-width: 768px) {
+
+  .logo-en {
+    font-size: 24px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .hero-card {
+    padding: 20px;
+  }
+
+  .hero-card h1 {
+    font-size: 20px;
+  }
+
+  .focus-vision-images {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box {
+    border: none;
+    margin-top: 40px;
+  }
+
+  .op-left {
+    padding: 40px 20px;
+  }
+
+  .app-right {
+    padding: 40px 20px;
+  }
+
+  .contact-bar {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: currentColor;
+  color: white;
+  transition: 0.3s;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #2b0d4d;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    transform: translateY(-200%); 
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0); 
+  }
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* SMALL MOBILE (<= 480px) */
+@media (max-width: 480px) {
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero-card h1 {
+    font-size: 16px;
+  }
+
+  .search-section {
+    padding: 40px 10px;
+  }
+
+  .portfolio-header h2 {
+    font-size: 22px;
+  }
+
+  .stats-content h2 {
+    font-size: 22px;
+  }
+
+  .stat-box h3 {
+    font-size: 28px;
+  }
+
+  .app-right p {
+    font-size: 16px;
+  }
+}
