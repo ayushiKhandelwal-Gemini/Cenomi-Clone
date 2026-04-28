@@ -96,9 +96,12 @@ export default function SearchBar() {
         </div>
 
         {/* Search Button */}
-        <button className="search-btn">
-          Search <span>→</span>
-        </button>
+        <div>
+          <button className="search-btn">
+              <div>Search</div>
+              <div>→</div>
+          </button>
+        </div>
 
       </div>
     </section>

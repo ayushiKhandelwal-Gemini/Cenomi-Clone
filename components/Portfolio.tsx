@@ -34,11 +34,27 @@ const Portfolio = () => {
       
       {/* Heading */}
       <div className="portfolio-header">
-        <span className="portfolio-borderbox"></span>
-        <span className="small-title">Center Portfolio</span>
-        <h2>The biggest international brands</h2>
-        <h2>Your gateway to an exciting shopping and entertaining experience</h2>
-        <h4>Our unparalleled size and strategic locations establish our centers as the preferred shopping destinations for visitors.</h4>
+        <div className="center-portfolio-line" />
+
+        <div className="center-portfolio-content">
+          <span className="center-portfolio-eyebrow">
+            Center Portfolio
+          </span>
+
+          <h2 className="center-portfolio-title">
+            The biggest international brands
+          </h2>
+
+          <h3 className="center-portfolio-subtitle">
+            Your gateway to an exciting shopping<br />
+            and entertaining experience
+          </h3>
+
+          <p className="center-portfolio-description">
+            Our unparalleled size and strategic locations establish our
+            centers as the preferred shopping destinations for visitors.
+          </p>
+        </div>
       </div>
 
       {/* Grid */}

@@ -21,8 +21,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <div className="navbar-logo">
-          <span className="logo-en">cenomi</span>
-          <span className="logo-ar">سينومي</span>
+         
         </div>
 
         {/* NAV LINKS */}

@@ -32,7 +32,7 @@ const Footer = () => {
 
         {/* Social Section */}
         <div className="footer-social">
-          <h2>FOLLOW US</h2>
+          <img src="https://centers.cenomi.com/wp-content/uploads/sites/2/2026/01/Cenomi-Dual-Logo-White-1.svg" alt="cenomi-logo" />
           <div className="icons">
             <span>IN</span>
             <span>FB</span>

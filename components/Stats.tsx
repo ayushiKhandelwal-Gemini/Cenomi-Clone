@@ -30,7 +30,7 @@ const StatsSection = () => {
           transition={{ duration: 1 }}
           viewport={{ once: false }}
         />
-
+        <div className="center-stats-line" />
         <span className="small-title">Market Reach & Statistics</span>
 
         <h2>Uncovering the great potential of MENA</h2>

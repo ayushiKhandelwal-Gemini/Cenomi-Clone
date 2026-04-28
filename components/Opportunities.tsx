@@ -24,9 +24,10 @@ const Opportunities = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false }}
       >
-        <span className="small-title">
+        <div className="center-opportunity-line" />
+        <div className="small-title">
           Opportunities & New Developments
-        </span>
+        </div>
 
         <h2>Uncover great potential for you</h2>
 

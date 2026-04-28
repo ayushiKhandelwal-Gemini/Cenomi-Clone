@@ -8,14 +8,28 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
 const slides = [
-  { image: "/v1.png", text: `CHECKOUT THE PREFERRED\nSHOPPING DESTINATIONS\nFOR VISITORS` },
-  { image: "/v2.png", text: `CENOMI CENTERS IS THE\nKINGDOM’S LARGEST OWNER\nAND OPERATOR OF MALLS` },
-  { image: "/v3.png", text: `CREATING WORLD‑CLASS\nLIFESTYLE DESTINATIONS\nACROSS THE KINGDOM` },
+  {
+    image:
+      "https://centers.cenomi.com/wp-content/uploads/sites/2/2025/05/stt__1_-1.jpg",
+    text: `CHECKOUT THE PREFERRED\nSHOPPING DESTINATIONS\nFOR VISITORS`,
+  },
+  {
+    image:
+      "https://centers.cenomi.com/wp-content/uploads/sites/2/2025/05/image008.webp",
+    text: `CENOMI CENTERS IS THE\nKINGDOM’S LARGEST OWNER\nAND OPERATOR OF MALLS`,
+  },
+  {
+    image:
+      "https://centers.cenomi.com/wp-content/uploads/sites/2/2025/05/Jawharat_Jeddah_Piazza_Aerial_View_2__1_.webp",
+    text: `CREATING WORLD‑CLASS\nLIFESTYLE DESTINATIONS\nACROSS THE KINGDOM`,
+  },
 ];
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
   const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
+
+  const progress = ((current + 1) / slides.length) * 100;
 
   return (
     <section className="hero">
@@ -42,19 +56,27 @@ export default function Hero() {
           ))}
         </Swiper>
       </motion.div>
+      <div className="hero-content">
+        <div className="hero-card">
+          <h1>{slides[current].text}</h1>
+        </div>
 
-      <div className="hero-card">
-        <h1>{slides[current].text}</h1>
-      </div>
+        <div className="hero-controls">
+          <button onClick={() => swiperRef?.slidePrev()} className="hero-arrow">
+            ‹
+          </button>
 
-      <div className="hero-dots">
-        {slides.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${current === index ? "active" : ""}`}
-            onClick={() => swiperRef?.slideToLoop(index)}
-          />
-        ))}
+          <div className="hero-progress">
+            <span
+              className="hero-progress-fill"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
+
+          <button onClick={() => swiperRef?.slideNext()} className="hero-arrow">
+            ›
+          </button>
+        </div>
       </div>
     </section>
   );
